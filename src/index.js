@@ -69,7 +69,18 @@ const namArr = ["tanaka", "suzuki", "sato"];
 // const formattedNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力して下さい'
 // console.log(formattedNum)
 
-const checkSum = (num1, num2) => {
-  return num1 + num2 > 100 ? "100を超えています！！" : "許容範囲内です";
-};
-console.log(checkSum(50, 60));
+// const checkSum = (num1, num2) => {
+//   return num1 + num2 > 100 ? "100を超えています！！" : "許容範囲内です";
+// };
+// console.log(checkSum(50, 60));
+
+//論理演算子
+// ||は左がfalseなら右を返す
+const num = null;
+const fee = num || "金額未定です";
+console.log(fee);
+
+// &&は左がtrueなら右を返す
+const num2 = 100;
+const fee2 = num2 && "何か設定されました";
+console.log(fee2);
