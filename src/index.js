@@ -52,11 +52,24 @@ const namArr = ["tanaka", "suzuki", "sato"];
 // });
 // console.log(newNumArr);
 
-const newNumArr = namArr.map((name) => {
-  if (name === "tanaka") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
-console.log(newNumArr);
+// const newNumArr = namArr.map((name) => {
+//   if (name === "tanaka") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNumArr);
+
+//三項演算子
+// const val = 1 > 0 ? 'trueです' : 'falseです'
+// console.log(val)
+
+// const num = 1300;
+// const formattedNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力して下さい'
+// console.log(formattedNum)
+
+const checkSum = (num1, num2) => {
+  return num1 + num2 > 100 ? "100を超えています！！" : "許容範囲内です";
+};
+console.log(checkSum(50, 60));
